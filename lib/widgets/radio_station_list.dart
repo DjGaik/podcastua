@@ -61,6 +61,7 @@ class RadioStationList extends StatelessWidget {
                     height: 4,
                   ),
                   Text(radioStations[index].stationName),
+                  Text(radioStations[index].stationSubName),
                 ],
               ),
             ),

@@ -4,14 +4,14 @@ class RadioStationModel extends Equatable {
   const RadioStationModel({
     required this.id,
     required this.stationName,
-    // required this.stationSubName,
+    required this.stationSubName,
     required this.stationUrl,
     required this.stationImageUrl,
   });
 
   final int id;
   final String stationName;
-  // final String stationSubName;
+  final String stationSubName;
   final String stationUrl;
   final String stationImageUrl;
 
@@ -19,7 +19,7 @@ class RadioStationModel extends Equatable {
   List<Object?> get props => [
         id,
         stationName,
-        // stationSubName,
+        stationSubName,
         stationUrl,
         stationImageUrl,
       ];
@@ -27,8 +27,8 @@ class RadioStationModel extends Equatable {
   factory RadioStationModel.fromJson(Map<String, dynamic> json) {
     return RadioStationModel(
       id: json['id'] as int,
-      stationName: json['name'] as String,
-      // stationSubName: json['name'] as String,
+      stationName: (json['station_name'] as String?) ?? '',
+      stationSubName: (json['name'] as String?) ?? '',
       stationUrl: json['stream_url'] as String,
       stationImageUrl: json['avatar_url'] as String,
     );

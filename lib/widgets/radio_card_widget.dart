@@ -37,7 +37,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
                 tag: MediaItem(
                   id: station.id.toString(),
                   title: station.stationName,
-                  // artist: station.stationSubName,
+                  artist: station.stationSubName,
                   artUri: Uri.parse(station.stationImageUrl),
                 ),
               ),
