@@ -20,31 +20,33 @@ class OnboardingScreen3 extends StatelessWidget {
           ],
         ),
       ),
-      child: Center(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 50,
-            ),
-            Lottie.network(
-              'https://lottie.host/906544b4-0b4e-4c21-9ff0-e6b44a597a08/kvOFOyYsxF.json',
-            ),
-            const Text(
-              'Привіт!',
-              style: TextStyle(
-                fontSize: 50,
+      child: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 50,
               ),
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            const Text(
-              'Приємного прослуховування :)',
-              style: TextStyle(
-                fontSize: 15,
+              Lottie.network(
+                'https://lottie.host/906544b4-0b4e-4c21-9ff0-e6b44a597a08/kvOFOyYsxF.json',
               ),
-            ),
-          ],
+              const Text(
+                'Привіт!',
+                style: TextStyle(
+                  fontSize: 50,
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'Приємного прослуховування :)',
+                style: TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
